@@ -1,6 +1,7 @@
 #' ---
 #' title: Exploratory analysis of government grant awards
 #' author: ""
+#' output: github_document
 #' ---
 
 # Render to HTML with
