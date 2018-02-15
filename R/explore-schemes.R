@@ -4,7 +4,7 @@
 #' ---
 
 # Render to HTML with
-# rmarkdown::render("R/explore.R")
+# rmarkdown::render("R/explore-schemes.R")
 
 library(tidyverse)
 library(scales)
@@ -85,6 +85,8 @@ arrange(source_data, `Value per year`) %>%
 count(source_data, `Value per year`) %>%
   arrange(-`Value per year`)
 
+pound <- dollar_format(prefix = "£")
+
 source_data %>%
   count(`Value per year`) %>%
   ggplot(aes(x = `Value per year`, y = n)) +
@@ -92,7 +94,6 @@ source_data %>%
   scale_x_log10(label = pound) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-pound <- dollar_format(prefix = "£")
 source_data %>%
   ggplot(aes(x = `Value per year`)) +
   geom_density() +
