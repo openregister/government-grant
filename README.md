@@ -1,8 +1,16 @@
 # Government-grant register data
 
 Data for a register of government grants, based on a
-[dataset](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/655239/GGIS_Grant_Schemes_2016_to_2017.csv/preview)
+[dataset](https://www.gov.uk/government/publications/government-grants-register)
 on GOV.UK.
+
+There are two things going on here:
+
+* schemes
+* awards
+
+The awards seem to use the same identifier as the goverenment-organisation
+register.
 
 ## Licence
 
